@@ -1,8 +1,6 @@
 import futhark, strutils, os
 
-# {.passL: "./SDL3/SDL3.dll"}
-
-if not existsDir("./wrapper"):
+if not dirExists("./wrapper"):
   createDir("./wrapper")
 
 importc:
