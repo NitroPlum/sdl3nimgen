@@ -13,13 +13,7 @@ generate.nim is a short script to tell Futhark how to generate the wrapper. Comp
 /wrapper/sdl3.nim
 ``` 
 
-## SDL3 dynamic lib must be available
-If SDL3 is in your path:
+simply run:
 ```
-nim c -r --maxLoopIterationsVM: 100000000000000 generate.nim 
-```
-
-If SDL3 is NOT in your path:
-```
-nim c -r --maxLoopIterationsVM: 100000000000000 generate.nim 
+nim gen
 ```
